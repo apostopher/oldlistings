@@ -1,0 +1,48 @@
+{
+  "name": "oldlistings",
+  "version": "1.0.0",
+  "description": "property listing charts",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "lint": "gulp lint",
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/apostopher/oldlistings.git"
+  },
+  "keywords": [
+    "real",
+    "estate"
+  ],
+  "author": "Rahul Devaskar <apostopher@gmail.com> (http://apostopher.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apostopher/oldlistings/issues"
+  },
+  "homepage": "https://github.com/apostopher/oldlistings#readme",
+  "dependencies": {
+    "lodash": "3.10.1",
+    "rx": "4.0.1",
+    "x-ray": "2.0.2"
+  },
+  "devDependencies": {
+    "chai": "3.3.0",
+    "commitizen": "1.0.5",
+    "cz-conventional-changelog": "1.1.4",
+    "gulp": "3.9.0",
+    "gulp-jshint": "1.11.2",
+    "gulp-load-plugins": "0.10.0",
+    "jshint": "2.8.0",
+    "jshint-stylish": "2.0.1",
+    "mocha": "2.3.3",
+    "pre-commit": "1.1.1"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  }
+}
